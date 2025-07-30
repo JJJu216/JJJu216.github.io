@@ -1,0 +1,63 @@
+/* 全域設定 */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 標題 */
+h1 {
+  font-size: 2.5em;
+  color: #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #2563eb;
+  margin-top: 40px;
+  border-left: 5px solid #60a5fa;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #1f2937;
+  margin-top: 30px;
+}
+
+/* 區塊間距與清單樣式 */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* 表格或段落 */
+p {
+  margin-bottom: 12px;
+}
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #777;
+}

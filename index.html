@@ -24,8 +24,8 @@
     }
 
     header img {
-      width: 100px;
-      height: 100px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #d1d5db;
@@ -86,6 +86,30 @@
       max-width: 100%;
       border-radius: 8px;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .fb-reel-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #1877f2;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .fb-reel-preview {
+      margin-top: 12px;
+      border-radius: 8px;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .fb-reel-preview img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -157,11 +181,33 @@
     <h2>作品集</h2>
     <div class="video-item">
       <h3>短影音作品</h3>
-      <iframe width="560" height="315" src="https://www.facebook.com/reel/1300330421220562" title="Video" frameborder="0" allowfullscreen></iframe>
+      <a class="fb-reel-link" href="https://www.facebook.com/reel/1300330421220562" target="_blank">觀看 Facebook 短影音作品</a>
+      <div class="fb-reel-preview">
+        <a href="https://www.facebook.com/reel/1300330421220562" target="_blank">
+          <img src="images/sample1.jpg" alt="Facebook Reel">
+        </a>
+      </div>
     </div>
+    <div class="video-item">
+      <a class="fb-reel-link" href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">觀看 Facebook 短影音作品</a>
+      <div class="fb-reel-preview">
+        <a href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">
+          <img src="images/sample2.jpg" alt="Facebook Reel">
+        </a>
+      </div>
+    </div>
+    
     <div class="image-item">
       <h3>作品截圖</h3>
-      <img src="images/sample1.jpg" alt="作品圖片">
+      <img src="images/sample3.jpg" alt="作品圖片">
+    </div>
+    <div class="image-item">
+      <h3>平面設計作品</h3>
+      <img src="images/sample4.jpg" alt="平面設計圖">
+    </div>
+    <div class="video-item">
+      <h3>YouTube 影片作品</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 

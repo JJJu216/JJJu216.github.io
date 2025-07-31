@@ -4,16 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>邱心依的個人履歷</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Noto Sans TC', sans-serif;
       line-height: 1.8;
       max-width: 960px;
       margin: 0 auto;
       padding: 40px 20px;
-      background-color: #fefefe;
+      background-color: #f9fafb;
       color: #333;
+    }
+
+    nav {
+      background-color: #1e3a8a;
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     header {
@@ -21,9 +46,10 @@
       align-items: center;
       gap: 20px;
       margin-bottom: 30px;
-      background-color: #e5e7eb;
+      background-color: #e0e7ff;
       padding: 30px;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     header img {
@@ -31,7 +57,7 @@
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid #d1d5db;
+      border: 3px solid #c7d2fe;
     }
 
     h1 {
@@ -57,10 +83,10 @@
 
     section {
       background-color: #ffffff;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
       margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     }
 
     ul {
@@ -68,7 +94,7 @@
     }
 
     ul li {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     p {
@@ -98,12 +124,17 @@
       margin-bottom: 10px;
       background-color: #1877f2;
       color: #fff;
-      padding: 4px 0;
-      font-size: 0.75em;
+      padding: 6px 0;
+      font-size: 0.8em;
       text-align: center;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .video-item a.fb-reel-link:hover {
+      background-color: #145dbf;
     }
 
     .fb-reel-preview {
@@ -115,30 +146,60 @@
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .fb-reel-preview img:hover {
+      transform: scale(1.02);
+    }
+
+    .top-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2563eb;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+      display: none;
+      z-index: 999;
+    }
+
+    .top-link.show {
+      display: block;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#education">學歷</a>
+    <a href="#experience">經歷</a>
+    <a href="#language">語言</a>
+    <a href="#portfolio">作品集</a>
+  </nav>
+
   <header>
     <img src="images/profile.jpg" alt="邱心依個人照片">
     <div>
       <h1>邱心依</h1>
-      <p>性別：女<br>
+      <p>Email: joyous21688@gmail.com<br>
+      電話: 0922-176176<br>
+      地址：台中市南屯區大昌街536號<br>
+      性別：女<br>
       生日：1999/02/16 (26歲）<br>
       就業狀態：待業中<br>
-      Email: joyous21688@gmail.com<br>
-      聯絡方式：0922-176176<br>
-      地址：台中市南屯區大昌街536號<br>
       駕駛執照: 普通小型車駕照、普通重型機車駕照</p>
     </div>
   </header>
 
-  <section>
+  <section id="education">
     <h2>學歷</h2>
-    <p>國立台中科技大學 應用英文科五專畢業（2014/09~2020/06）</p>
+    <p>國立台中科技大學 應用英文科五專畢業（2014/9~2020/6）</p>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>工作經歷</h2>
     <ul>
       <li><strong>自由接案工作者（2024/05~2025/05）</strong><br>行銷短影音拍攝：台灣房屋富裕地產、Ludavi鑽石水瓶<br>直播銷售人員：赫本女裝服飾、518居家生活館</li>
@@ -147,37 +208,12 @@
     </ul>
   </section>
 
-  <section>
-    <h2>語文能力</h2>
-    <p>英文：TOEIC 800 | 日文：JLPT N2</p>
+  <section id="language">
+    <h2>語言能力</h2>
+    <p>英文：TOEIC 800｜日文：JLPT N2</p>
   </section>
 
-  <section>
-    <h2>自傳</h2>
-    <p>您好，</p>
-    <p>我是邱心依，出生於1999年，畢業於國立台中科技大學、五專部應用英文科。</p>
-    <p>我覺得外語能力是 一個很好的工具，所以國中畢業後決定讀應英科。英文多益成績是800分，聽與讀的能力好。喜歡日本文化，因此對日文也特別學習，日文能力考取了N2的檢定。</p>
-    <p>至小學習琵琶演奏，獨奏上台演出已經有十多年經驗，並參與過商業、學術、茶會、婚宴等等場合演出，熟悉觀眾的互動與交流，舞台燈光、走位、流程銜接，不過因為個人生活規劃，目前已停止接洽演出事項。</p>
-    <p>自2020年參與服務性社團台中大屯扶青社，協助辦理活動與社內聚會，與社員相處和諧融洽，擔任過社團的財務與秘書，擔任過社長，團結社員向心力與招攬新社員，舉辦演講、職業、公益等等活動。</p>
-    <p>對於網路行銷與商品通路很有興趣而自行尋找課程接觸。學習過Photoshop. Premiere. After effects等等視覺應用軟體。</p>
-    <p>畢業後於解憂商行工作持續約2年時間，負責行銷企劃與行政規劃，期間學習並應用產品與客戶的連結，為品牌創立官方網站、官方LINE、FB、IG並維護，還有舉辦實體活動還推廣商品，對產品製造到行政流程的過程都非常熟悉，全方位的都有執行過，這些更深刻的瞭解，都讓我更能知道怎麼行銷推廣。</p>
-    <p>而後任職於奇妮國際有限公司一年半，奇妮孕哺是做母嬰產品，公司有30間直營店與百貨櫃位，專職於行銷企劃；行銷工作內容從年度活動安排，到執行活動的所有宣傳與店櫃櫃姐溝通，以及社群非常熱門的短影音拍攝、社群下廣告與剪輯和直播規劃主持，都能獨立執行。</p>
-    <p>再來因為個人生活安排，做自由工作者一年，主要工作以接案協助行銷企劃與執行相關，短影音部分從前期準備（腳本設計、台詞撰寫、拍攝人員動作指導）、拍攝執行（獨自拍攝取景、人員溝通）、剪輯（動畫效果、精彩內容挑選）、社群（發文並配上文案）、推廣（fb、ig下廣告）全部步驟都能獨立完成。也有兼職在線上直播販售產品，能夠順利在販售平台介面操作，與觀眾互動烘托氣氛，到直播銷售技巧也都流暢自如。</p>
-    <p>因為做行銷時，時常需要通過判斷市場來決定未來行銷方向，而因為這些契機，讓我想更多的了解數據分析，想透過收集大數據並正確有效率的分析，讓行銷決策可以更加正確、更有說服力。</p>
-    <p>因此決定參與政府提供的python與數據分析課程，在個課程中，主要學習到Python、SQL資料庫、Power BI、網路爬蟲這四個大方向，也包含協助工具Gihub操作。這些資訊運用的技巧，可以更加幫助我了解市場的動向，以及可以追蹤特定項目的數據，非常的實用。結業時也會完成一個台灣房市買或租的分析。</p>
-    <p>對於工作一直保持積極、熱情與有效率的態度，將事項完成清楚，是讓我感到有成就感。謝謝您閱讀我的自傳。</p>
-  </section>
-
-  <section>
-    <h2>證照</h2>
-    <ul>
-      <li>電腦簡報-專業級 (PowerPoint 2013)</li>
-      <li>電子試算表-專業級 (Excel 2016)</li>
-      <li>英文輸入-實用級</li>
-    </ul>
-  </section>
-
-  <section>
+  <section id="portfolio">
     <h2>作品集</h2>
     <h3>台灣房屋 富裕地產</h3>
     <div class="video-gallery">
@@ -235,8 +271,16 @@
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 邱心依 All rights reserved.
-  </footer>
+  <a href="#top" class="top-link" id="topLink">回到上方</a>
+  <script>
+    const topLink = document.getElementById('topLink');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        topLink.classList.add('show');
+      } else {
+        topLink.classList.remove('show');
+      }
+    });
+  </script>
 </body>
 </html>

@@ -24,8 +24,8 @@
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #d1d5db;
@@ -48,7 +48,8 @@
     h3 {
       font-size: 1.2em;
       color: #1f2937;
-      margin-top: 30px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     section {
@@ -78,38 +79,54 @@
       color: #888;
     }
 
-    .video-item, .image-item {
-      margin-bottom: 20px;
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    .video-item iframe, .image-item img {
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    .video-item {
+      flex: 1 1 calc(33.333% - 20px);
+      box-sizing: border-box;
     }
 
-    .fb-reel-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+    .video-item a.fb-reel-link {
+      display: block;
+      margin-bottom: 10px;
       background-color: #1877f2;
       color: #fff;
+      padding: 10px;
+      text-align: center;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .fb-reel-preview {
-      margin-top: 12px;
       border-radius: 8px;
       overflow: hidden;
-      max-width: 100%;
     }
 
     .fb-reel-preview img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
+    }
+
+    .image-item {
+      margin-bottom: 20px;
+    }
+
+    .image-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -123,105 +140,64 @@
     </div>
   </header>
 
-  <section id="basic-info">
-    <h2>個人資料</h2>
-    <ul>
-      <li>性別：女</li>
-      <li>年齡：26歲</li>
-      <li>就業狀態：待業中</li>
-      <li>駕照：普通小型車、普通重型機車</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>學歷</h2>
-    <p>國立台中科技大學 應用英文科五專畢業（2014/09～2020/06）</p>
-  </section>
-
-  <section id="experience">
-    <h2>工作經驗</h2>
-    <p>總年資：4~5年</p>
-    <ul>
-      <li>
-        <strong>自由接案工作者</strong>（2024/05～2025/05）<br>
-        行銷短影音拍攝：台灣房屋富裕地產、Ludavi鑽石水瓶<br>
-        直播銷售人員：赫本女裝服飾、518居家生活館
-      </li>
-      <li>
-        <strong>奇妮國際有限公司</strong>（2022/12～2024/05）<br>
-        職稱：行銷企劃<br>
-        工作內容：活動策劃與執行、社群經營、下廣告與拍攝、直播主持、部門協調
-      </li>
-      <li>
-        <strong>解憂商行</strong>（2020/10～2022/10）<br>
-        職稱：行銷企劃專員<br>
-        工作內容：品牌包裝與推廣、官方網站與社群經營、產品拍攝與設計、行銷活動規劃與接待
-      </li>
-    </ul>
-  </section>
-
-  <section id="languages">
-    <h2>語文能力</h2>
-    <ul>
-      <li>英文：TOEIC 800，聽/中等，說/略懂，讀/中等，寫/略懂</li>
-      <li>日文：JLPT N2，聽/略懂，說/略懂，讀/中等，寫/略懂</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>證照</h2>
-    <ul>
-      <li>電腦簡報-專業級（PowerPoint 2013）</li>
-      <li>電子試算表-專業級（Excel 2016）</li>
-      <li>英文輸入-實用級</li>
-    </ul>
-  </section>
-
   <section id="portfolio">
     <h2>作品集</h2>
-    <div class="video-item">
-      <h3>短影音作品</h3>
-      <a class="fb-reel-link" href="https://www.facebook.com/reel/1300330421220562" target="_blank">觀看 Facebook 短影音作品</a>
-      <div class="fb-reel-preview">
-        <a href="https://www.facebook.com/reel/1300330421220562" target="_blank">
-          <img src="images/sample1.jpg" alt="Facebook Reel">
-        </a>
+
+    <h3>台灣房屋 富裕地產</h3>
+    <div class="video-gallery">
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.facebook.com/reel/1300330421220562" target="_blank">觀看 Facebook 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.facebook.com/reel/1300330421220562" target="_blank">
+            <img src="images/sample1.jpg" alt="sample1">
+          </a>
+        </div>
+      </div>
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">觀看 Facebook 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">
+            <img src="images/sample2.jpg" alt="sample2">
+          </a>
+        </div>
+      </div>
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.facebook.com/reel/539327109179936" target="_blank">觀看 Facebook 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.facebook.com/reel/539327109179936" target="_blank">
+            <img src="images/sample3.jpg" alt="sample3">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="video-item">
-      <a class="fb-reel-link" href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">觀看 Facebook 短影音作品</a>
-      <div class="fb-reel-preview">
-        <a href="https://www.facebook.com/fuyu918/videos/1430406684843533" target="_blank">
-          <img src="images/sample2.jpg" alt="Facebook Reel">
-        </a>
+
+    <h3>Ludavi 鑽石水瓶</h3>
+    <div class="video-gallery">
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.tiktok.com/@user3875592917698/video/7503243971909422391" target="_blank">觀看 TikTok 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.tiktok.com/@user3875592917698/video/7503243971909422391" target="_blank">
+            <img src="images/sample4.jpg" alt="sample4">
+          </a>
+        </div>
+      </div>
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.tiktok.com/@user3875592917698/video/7444189439745625399" target="_blank">觀看 TikTok 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.tiktok.com/@user3875592917698/video/7444189439745625399" target="_blank">
+            <img src="images/sample5.jpg" alt="sample5">
+          </a>
+        </div>
+      </div>
+      <div class="video-item">
+        <a class="fb-reel-link" href="https://www.tiktok.com/@user3875592917698/video/7436033041631284536" target="_blank">觀看 TikTok 短影音作品</a>
+        <div class="fb-reel-preview">
+          <a href="https://www.tiktok.com/@user3875592917698/video/7436033041631284536" target="_blank">
+            <img src="images/sample6.jpg" alt="sample6">
+          </a>
+        </div>
       </div>
     </div>
-    
-    <div class="image-item">
-      <h3>作品截圖</h3>
-      <img src="images/sample3.jpg" alt="作品圖片">
-    </div>
-    <div class="image-item">
-      <h3>平面設計作品</h3>
-      <img src="images/sample4.jpg" alt="平面設計圖">
-    </div>
-    <div class="video-item">
-      <h3>YouTube 影片作品</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>自傳</h2>
-    <p>您好，我是邱心依，出生於1999年，畢業於國立台中科技大學應用英文科，興趣為爬山、製作甜點與音樂演奏。自小學習琵琶演奏，已有11年舞台經驗，參與過商業、學術、茶會與婚宴演出，熟悉觀眾互動與流程銜接。</p>
-    <p>外語能力為我人生重要工具，多益800分，並考取日文N2。曾任解憂商行與奇妮國際行銷企劃，負責品牌推廣、網站與社群經營、活動與直播主持等任務。對行銷與通路極具熱情，具備Photoshop、Premiere、After Effects 應用經驗。</p>
-    <p>我自2020年起參與台中大屯扶青社，曾任社長與幹部，善於團隊協作與活動企劃。工作態度積極熱情，擅長高效執行與整合。期待能在下一份工作中持續發揮與學習。謝謝您閱讀我的自傳。</p>
-
-    <h3>English Version</h3>
-    <p>My name is HSIN-YI CHIU, from Taichung. I graduated from the department of Applied English of Taichung University of Science and Technology. I was born in 1999.</p>
-    <p>My TOEIC score is 800. I’m also interested in Japanese and passed JLPT N2. I have 11 years of performing experience in pipa and have performed in various occasions such as tea parties, weddings, and commercial events.</p>
-    <p>I’m enthusiastic about online marketing and have self-studied Photoshop, Premiere, and After Effects. I worked at Jie Yu Firm and Chynne International as a marketing planner. I built and maintained websites and social media, and managed marketing campaigns and live streams.</p>
-    <p>I also joined the Taichung Datun Rotaract Club since 2020, organizing events and leading members as a president. Thank you for reading my introduction.</p>
   </section>
 
   <footer>

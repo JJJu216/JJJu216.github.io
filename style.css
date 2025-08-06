@@ -104,3 +104,31 @@ two-columns section {
   }
 }
 
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 置中整排影片 */
+  gap: 20px;
+}
+
+.video-item {
+  flex: 0 1 60%; /* 原本是33%，現在縮小為60%寬 */
+  max-width: 400px; /* 控制最大寬度，避免過大 */
+  text-align: center;
+}
+
+.fb-reel-preview img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.fb-reel-link {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.8em;
+  margin-top: 6px;
+}
+
+

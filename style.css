@@ -11,17 +11,15 @@ body {
 
 /* 標題 */
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #1e3a8a;
-  border-bottom: 2px solid #1e3a8a;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin: 0 0 8px 0;
 }
 
 h2 {
   font-size: 1.6em;
   color: #2563eb;
-  margin-top: 40px;
+  margin: 0 0 12px 0;
   border-left: 5px solid #60a5fa;
   padding-left: 10px;
 }
@@ -29,7 +27,7 @@ h2 {
 h3 {
   font-size: 1.2em;
   color: #1f2937;
-  margin-top: 30px;
+  margin: 0 0 8px 0;
 }
 
 /* 區塊間距與清單樣式 */

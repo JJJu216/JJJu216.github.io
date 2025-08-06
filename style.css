@@ -62,13 +62,13 @@ footer {
   color: #777;
 }
 
-.two-columns {
+two-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-.two-columns section {
+two-columns section {
   flex: 1 1 45%;
 }

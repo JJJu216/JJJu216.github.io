@@ -70,3 +70,37 @@ two-columns {
 two-columns section {
   flex: 1 1 45%;
 }
+
+@media print {
+  body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+
+  header, section, footer {
+    page-break-inside: avoid;
+    margin: 10mm 20mm;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  nav, .top-link {
+    display: none; /* 隱藏導航與回到上方按鈕 */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-gallery, .video-item, iframe {
+    display: none; /* 避免影片區佔空間或列印錯位 */
+  }
+
+  h1, h2, h3 {
+    color: black;
+  }
+}
+
